@@ -50,7 +50,6 @@ base_download_tools:
   - yt-dlp
 
 base_developer_tools:
-  - 2to3
   - android-sdk-platform-tools-common
   - android-tools-adb
   - android-tools-fastboot
