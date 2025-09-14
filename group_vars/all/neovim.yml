@@ -1,0 +1,11 @@
+---
+
+neovim_apt_packages:
+  - neovim           # Modern Vim-based text editor
+  - luarocks         # Lua package manager
+  - fd-find          # Fast file search utility
+  - tree-sitter-cli  # Parser generator tool
+
+neovim_lazyvim_starter_url: https://github.com/LazyVim/starter.git
+
+...
