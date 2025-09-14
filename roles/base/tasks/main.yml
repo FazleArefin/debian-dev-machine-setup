@@ -212,21 +212,25 @@
   become: true
   become_user: "{{ local_username }}"
 
-# obsidian markdown editor
+- name: build and install rust binaries using cargo
+  community.general.cargo:
+    name: "{{ item }}"
+    locked: true
+    state: latest
+  with_items: "{{ rust_cargo_tools }}"
+  become: true
+  become_user: "{{ local_username }}"
+
 - block:
-    - name: Fetch latest Obsidian .deb file URL
-      ansible.builtin.uri:
-        url: "{{ base_obsidian_download_base_url }}"
-        return_content: true
-      register: obsidian_latest_release
+    - name: Add the flathub flatpak repository remote to the user installation
+      community.general.flatpak_remote:
+        name: flathub
+        state: present
+        flatpakrepo_url: "{{ base_flatpakrepo_url }}"
 
-    - name: Extract Obsidian .deb file URL
-      ansible.builtin.set_fact:
-        obsidian_deb_url:  "{{ obsidian_latest_release.json.assets | selectattr('name', 'match', '.*\\.deb$') | map(attribute='browser_download_url') | first }}"
-
-    - name: Download and install Obsidian
-      ansible.builtin.apt:
-        deb: "{{ obsidian_deb_url }}"
+    - name: Install flatpak apps from flathub
+      community.general.flatpak:
+        name: "{{ base_flatpak_flathub_apps }}"
         state: present
 
 ...
