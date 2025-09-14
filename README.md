@@ -1,4 +1,4 @@
-# debian-dev-machine-setup | Debian 12
+# debian-dev-machine-setup | Debian 13
 
 ## Description
 
@@ -6,7 +6,7 @@ This repository contains Ansible playbooks to configure a system as a developmen
 
 The playbooks are designed for Debian-based systems with minimal modifications but have only been tested on:
 
-- **Debian 12/Bookworm (stable)**
+- **Debian 13/Trixie (stable)**
 
 The screenshot below shows the *p10k zsh theme with tmux*:
 
@@ -21,7 +21,6 @@ As a DevSecOps Engineer, I work daily with tools like AWS, Docker, Ansible, and 
 Below is a summary of the packages installed and configured, organized by roles:
 
 - **role: base**
-  - Mounts `/tmp` on tmpfs to reduce SSD read/write operations and extend SSD lifespan, with no leftover files on system shutdown.
   - Sets the default system editor to Vim instead of Nano.
   - Enables the UFW firewall and installs the GUFW graphical frontend.
   - Tunes system swappiness to minimize swapping.
