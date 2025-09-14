@@ -1,25 +1,25 @@
 ---
 
-- name: add hashicorp apt key
+- name: Add hashicorp apt key
   ansible.builtin.apt_key:
     url: "{{ hashicorp_apt_key_url }}"
     keyring: "{{ hashicorp_apt_key_keyring }}"
 
-- name: add hashicorp repo
+- name: Add hashicorp repo
   ansible.builtin.apt_repository:
     repo: "{{ hashicorp_repo_trixie }}"
     state: present
     filename: hashicorp
 
-- name: prioritize packages from hashicorp apt repo
+- name: Prioritize packages from hashicorp apt repo
   ansible.builtin.copy:
     src: etc/apt/preferences.d/hashicorp.pref
     dest: /etc/apt/preferences.d/hashicorp.pref
     owner: root
     group: root
-    mode: 0644
+    mode: '0644'
 
-- name: install hashicorp packages
+- name: Install hashicorp packages
   ansible.builtin.apt:
     name: "{{ hashicorp_packages }}"
     force_apt_get: true
