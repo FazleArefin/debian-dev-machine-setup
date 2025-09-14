@@ -1,0 +1,85 @@
+# Config reference: https://alacritty.org/config-alacritty.html
+
+#[general]
+import = ["~/.config/alacritty/themes/themes/tokyo_night.toml"]
+
+[env]
+TERM = "xterm-256color"
+
+[window]
+decorations = "Full"
+opacity = 0.95
+blur = true
+
+[window.padding]
+x = 10
+y = 10
+
+[font]
+size = 10
+
+[font.normal]
+family = "CaskaydiaCove Nerd Font Mono"
+style = "Regular"
+
+[font.bold]
+family = "CaskaydiaCove Nerd Font Mono"
+style = "Bold"
+
+[font.italic]
+family = "CaskaydiaCove Nerd Font Mono"
+style = "Italic"
+
+[font.bold_italic]
+family = "CaskaydiaCove Nerd Font Mono"
+style = "Bold Italic"
+
+[font.offset]
+x = 0
+y = 1
+
+# TIP: to check if fonts are installed correctly, type the following in the terminal:
+#    echo -e "\e[0m Regular \e[1m Bold \e[0;3m Italic \e[0;1;3m BoldItalic \e[0m"
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "PasteSelection"
+key = "Insert"
+mods = "Shift"
+
+[[keyboard.bindings]]
+action = "ResetFontSize"
+key = "Key0"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Equals"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Plus"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = "Minus"
+mods = "Control"
+
+#[terminal.shell]
+[shell]
+program = "/usr/bin/zsh"
+args = ["-c", "if ! tmux ls 2>/dev/null | grep -q -E '^main.*attached'; then tmux attach -t main || tmux new -s main; else /usr/bin/zsh; fi"]
