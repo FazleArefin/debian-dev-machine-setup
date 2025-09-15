@@ -31,13 +31,20 @@
     force_apt_get: true
 
 - block:
-    - name: install debian-fasttrack keyring
+    - name: Install debian-fasttrack keyring
       ansible.builtin.apt:
         name: fasttrack-archive-keyring
         state: present
         force_apt_get: true
 
-    - name: enable debian-fasttrack repo
+    - name: Symlink debian-fasttrack keyring to trusted.gpg.d
+      ansible.builtin.file:
+        src: /usr/share/keyrings/fasttrack-archive-keyring.gpg
+        dest: /etc/apt/trusted.gpg.d/fasttrack-archive-keyring.gpg
+        state: link
+        force: false
+
+    - name: Enable debian-fasttrack repo
       ansible.builtin.copy:
         owner: root
         group: root
