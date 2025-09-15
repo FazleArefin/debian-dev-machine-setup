@@ -1,8 +1,8 @@
 ---
 
-hashicorp_repo_trixie: "deb [arch=amd64 signed-by=/etc/apt/keyrings/hashicorp.gpg] https://apt.releases.hashicorp.com trixie main"  # TODO: change for newer debian versions
+hashicorp_repo_trixie: "deb [arch=amd64 signed-by=/etc/apt/trusted.gpg.d/hashicorp.gpg] https://apt.releases.hashicorp.com trixie main"  # TODO: change for newer debian versions
 hashicorp_apt_key_url: "https://apt.releases.hashicorp.com/gpg"
-hashicorp_apt_key_keyring: "/etc/apt/keyrings/hashicorp.gpg"
+hashicorp_apt_key_keyring: "/etc/apt/trusted.gpg.d/hashicorp.gpg"
 
 hashicorp_packages:
   - vagrant     # HashiCorp Vagrant, development environments

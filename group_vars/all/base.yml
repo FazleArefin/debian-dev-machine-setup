@@ -10,7 +10,7 @@ base_archiving_tools:
   - unace          # Extracts ACE archives
   - unzip          # Extracts ZIP archives
   - uudeview       # UUencoded file decoder
-  - zip            # ZIP archive toole_archiving_tools:
+  - zip            # ZIP archive tool
 
 base_productivity_tools:
   - libreoffice    # Office suite
