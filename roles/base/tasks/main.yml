@@ -215,7 +215,7 @@
 
 - name: build and install golang binaries
   ansible.builtin.command: "go install {{ item }}"
-  with_items: "{{ golang_tools }}"
+  with_items: "{{ golang_tools | default([]) }}"
   become: true
   become_user: "{{ local_username }}"
 
@@ -224,7 +224,7 @@
     name: "{{ item }}"
     locked: true
     state: latest
-  with_items: "{{ rust_cargo_tools }}"
+  with_items: "{{ rust_cargo_tools | default([]) }}"
   become: true
   become_user: "{{ local_username }}"
 

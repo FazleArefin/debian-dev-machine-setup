@@ -85,6 +85,7 @@ base_developer_tools:
   - git-delta        # A syntax-highlighting pager for git, diff, and grep output
   - git-extras       # Git utilities and extensions
   - gitg             # Git repository viewer
+  - glow             # Redder Markdown on the command-line
   - golang-go        # Go programming language
   - htop             # Interactive process viewer
   - httpie           # User-friendly HTTP client
@@ -92,6 +93,7 @@ base_developer_tools:
   - ipython3         # Interactive Python shell
   - jq               # Command-line JSON processor
   - kwalify          # YAML/JSON schema validator
+  - lazygit          # Git repository management tool
   - makeself         # Self-extractable archive creator
   - meld             # Visual diff and merge tool
   - miller           # CSV/TSV/JSON data processing tool
@@ -141,6 +143,7 @@ base_developer_tools:
   - tmuxp            # Tmux session manager
   - tree             # Directory listing in tree format
   - uget             # Download manager
+  - xh               # Drop-in replacement for httpie/http
   - xsel             # Command-line X selection tool
   - yamllint         # YAML linter
   - zeal             # Offline documentation browser
@@ -167,14 +170,11 @@ base_media_tools:
   - vlc                   # Media player
 
 golang_tools:
-  - github.com/charmbracelet/glow@latest        # Render markdown on the CLI
   # - oss.terrastruct.com/d2@latest               # d2 diagram as code tool
-  - github.com/jesseduffield/lazygit@latest     # Simple terminal UI for git commands
   # - github.com/wagoodman/dive@latest            # Tool for exploring each layer in a docker image
 
 rust_cargo_tools:
   - tlrc  # tldr client
-  - xh    # Drop-in replacement for httpie/http
 
 base_permanent_night_light:
   night_light_enabled: false              # set this to true for permanently turning on night light
