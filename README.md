@@ -1,5 +1,16 @@
 # debian-dev-machine-setup | Debian 12
 
+---
+
+> [!WARNING]
+> **Discontinued**
+>
+> This repository is no longer actively maintained. I no longer use Debian and cannot commit resources to addressing breaking changes.
+>
+> The code is provided as-is. Fork it, modify it, and take it in whatever direction you see fit.
+
+---
+
 ## Description
 
 This repository contains Ansible playbooks to configure a system as a development machine after a clean install.
