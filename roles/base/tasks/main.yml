@@ -1,16 +1,5 @@
 ---
 
-- name: Setup UFW firewall
-  block:
-    - name: Install ufw package
-      ansible.builtin.apt:
-        name: ufw
-        state: present
-
-    - name: Enable ufw firewall
-      community.general.ufw:
-        state: enabled
-
 # It may be desirable to set this to zero, so that application memory is retained as long as possible at the expense
 # of the page cache. When there is still a memory shortage, the kernel can still use swapping.
 - name: Tune system swappiness
