@@ -53,7 +53,7 @@ ZSH_HIGHLIGHT_STYLES[global-alias]=fg=magenta
 ZSH_HIGHLIGHT_STYLES[precommand]=fg=green,underline
 ZSH_HIGHLIGHT_STYLES[commandseparator]=fg=blue,bold
 ZSH_HIGHLIGHT_STYLES[autodirectory]=fg=green,underline
-ZSH_HIGHLIGHT_STYLES[path]=underline
+ZSH_HIGHLIGHT_STYLES[path]=bold
 ZSH_HIGHLIGHT_STYLES[path_pathseparator]=
 ZSH_HIGHLIGHT_STYLES[path_prefix_pathseparator]=
 ZSH_HIGHLIGHT_STYLES[globbing]=fg=blue,bold
