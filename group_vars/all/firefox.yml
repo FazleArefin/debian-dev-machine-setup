@@ -1,7 +1,0 @@
----
-
-firefox_repo: "deb [arch=amd64 signed-by=/etc/apt/keyrings/packages.mozilla.org.gpg] https://packages.mozilla.org/apt mozilla main"
-firefox_apt_key_url: "https://packages.mozilla.org/apt/repo-signing-key.gpg"
-firefox_apt_key_keyring: "/etc/apt/keyrings/packages.mozilla.org.gpg"
-
-...

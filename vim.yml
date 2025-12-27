@@ -1,6 +1,7 @@
 ---
 
-- hosts: localhost
+- name: Apply vim role
+  hosts: localhost
   roles:
     - vim
 

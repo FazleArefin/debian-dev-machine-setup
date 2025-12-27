@@ -1,9 +1,9 @@
 ---
 
 privacy_packages:
-  - mat2
-  - proxychains4
-  - tor
-  - torsocks
+  - mat2          # Metadata Anonymisation Toolkit
+  - proxychains4  # Redirects TCP connections through a proxy
+  - tor           # Anonymizing overlay network for TCP-based applications
+  - torsocks      # Wrapper to use TOR with any application
 
 ...

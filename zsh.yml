@@ -1,6 +1,7 @@
 ---
 
-- hosts: localhost
+- name: Apply zsh role
+  hosts: localhost
   roles:
     - zsh
 

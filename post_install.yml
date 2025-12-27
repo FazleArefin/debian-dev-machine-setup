@@ -1,19 +1,17 @@
 ---
 
-- hosts: localhost
+- name: Perform post installation cleanup and display message
+  hosts: localhost
   tasks:
-    - name: remove redundant packages
+    - name: Remove redundant packages
       ansible.builtin.apt:
-          autoremove: true
-          force_apt_get: true
+        autoremove: true
+        force_apt_get: true
 
-    - name: display post install message
+    - name: Display post install message
       ansible.builtin.debug:
         msg:
           - 'Manual steps left to do:'
-          - '- git clone the dotfiles repo (optional)'
-          - '- add noatime option for your SSD mounts points in /etc/fstab (optional)'
-          - '- cache in RAM only in firefox: about:config, browser.cache.disk.enable -> false, browser.cache.memory.enable -> true, browser.cache.memory.capacity -> 1048576, browser.cache.memory.max_entry_size -> 51200, verify using about:cache in address bar (optional)'
           - '- Reboot your system'
 
 ...

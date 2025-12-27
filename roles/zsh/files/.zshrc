@@ -8,24 +8,15 @@ antigen use oh-my-zsh
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen bundle colored-man-pages
 antigen bundle colorize
-antigen bundle docker
-antigen bundle encode64
-#antigen bundle gem
 antigen bundle git
 antigen bundle git-extras
 antigen bundle httpie
-antigen bundle kubectl
-antigen bundle node
-antigen bundle npm
 antigen bundle pep8
 antigen bundle pip
 antigen bundle pipenv
 antigen bundle pylint
 antigen bundle python
-#antigen bundle ruby
 antigen bundle sudo
-antigen bundle vagrant
-antigen bundle yarn
 
 # Syntax highlighting and autosuggestions
 antigen bundle zsh-users/zsh-autosuggestions
@@ -132,13 +123,10 @@ export PATH=$PATH:$HOME/.local/bin
 # make sure pipenv creates virtualenv dir in current dir under .venv
 export PIPENV_VENV_IN_PROJECT=1
 
-# make vagrant use virtualbox as the default provider
-export VAGRANT_DEFAULT_PROVIDER='virtualbox'
-
 # extra aliases, functions and variables can be defined in these files
-[[ -f ~/.shell_aliases ]] && source ~/.shell_aliases
-[[ -f ~/.shell_functions ]] && source ~/.shell_functions
-[[ -f ~/.shell_variables ]] && source ~/.shell_variables
+[[ -f ~/.shell_aliases.sh ]] && source ~/.shell_aliases.sh
+[[ -f ~/.shell_functions.sh ]] && source ~/.shell_functions.sh
+[[ -f ~/.shell_variables.sh ]] && source ~/.shell_variables.sh
 
 # enable fzf fuzzy finder completions in the terminal
 [[ -f /usr/share/doc/fzf/examples/key-bindings.zsh ]] && source /usr/share/doc/fzf/examples/key-bindings.zsh    #fzf
