@@ -1,6 +1,6 @@
 ---
 
-- name: install security packages
+- name: Install security packages
   ansible.builtin.apt:
     name: "{{ security_packages }}"
     state: present

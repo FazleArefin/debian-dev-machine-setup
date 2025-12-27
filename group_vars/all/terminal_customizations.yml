@@ -5,12 +5,12 @@ terminal_customizations_nerd_fonts_base_url: "https://github.com/ryanoasis/nerd-
 
 # nerd fonts from https://github.com/ryanoasis/nerd-fonts
 terminal_customizations_nerd_fonts:
-  - "{{ terminal_customizations_nerd_fonts_base_url }}/CascadiaCode/CaskaydiaCoveNerdFontMono-BoldItalic.ttf"
-  - "{{ terminal_customizations_nerd_fonts_base_url }}/CascadiaCode/CaskaydiaCoveNerdFontMono-Bold.ttf"
-  - "{{ terminal_customizations_nerd_fonts_base_url }}/CascadiaCode/CaskaydiaCoveNerdFontMono-Italic.ttf"
-  - "{{ terminal_customizations_nerd_fonts_base_url }}/CascadiaCode/CaskaydiaCoveNerdFontMono-Regular.ttf"
+  - "{{ terminal_customizations_nerd_fonts_base_url }}/CascadiaCode/CaskaydiaCoveNerdFontMono-BoldItalic.ttf"  # don't remove; alacritty config uses this
+  - "{{ terminal_customizations_nerd_fonts_base_url }}/CascadiaCode/CaskaydiaCoveNerdFontMono-Bold.ttf"        # don't remove; alacritty config uses this
+  - "{{ terminal_customizations_nerd_fonts_base_url }}/CascadiaCode/CaskaydiaCoveNerdFontMono-Italic.ttf"      # don't remove; alacritty config uses this
+  - "{{ terminal_customizations_nerd_fonts_base_url }}/CascadiaCode/CaskaydiaCoveNerdFontMono-Regular.ttf"     # don't remove; alacritty config uses this
   - "{{ terminal_customizations_nerd_fonts_base_url }}/FiraCode/Bold/FiraCodeNerdFontMono-Bold.ttf"
-  - "{{ terminal_customizations_nerd_fonts_base_url }}/FiraCode/Regular/FiraCodeNerdFontMono-Regular.ttf"             # don't remove; tilix profile uses this
+  - "{{ terminal_customizations_nerd_fonts_base_url }}/FiraCode/Regular/FiraCodeNerdFontMono-Regular.ttf"
   - "{{ terminal_customizations_nerd_fonts_base_url }}/JetBrainsMono/Ligatures/BoldItalic/JetBrainsMonoNerdFontMono-BoldItalic.ttf"
   - "{{ terminal_customizations_nerd_fonts_base_url }}/JetBrainsMono/Ligatures/Bold/JetBrainsMonoNerdFontMono-Bold.ttf"
   - "{{ terminal_customizations_nerd_fonts_base_url }}/JetBrainsMono/Ligatures/Italic/JetBrainsMonoNerdFontMono-Italic.ttf"
@@ -30,5 +30,7 @@ terminal_customizations_nerd_fonts:
   - "{{ terminal_customizations_nerd_fonts_base_url }}/DroidSansMono/DroidSansMNerdFontMono-Regular.otf"
 
 terminal_customizations_tmux_plugin_repo: "https://github.com/tmux-plugins/tpm"
+
+terminal_customizations_alacritty_themes_repo: "https://github.com/alacritty/alacritty-theme"
 
 ...

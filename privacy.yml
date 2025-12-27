@@ -1,6 +1,7 @@
 ---
 
-- hosts: localhost
+- name: Apply privacy role
+  hosts: localhost
   roles:
     - privacy
 

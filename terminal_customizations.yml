@@ -1,6 +1,7 @@
 ---
 
-- hosts: localhost
+- name: Apply terminal customizations role
+  hosts: localhost
   roles:
     - terminal_customizations
 

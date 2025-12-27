@@ -1,6 +1,7 @@
 ---
 
-- hosts: localhost
+- name: Apply base role
+  hosts: localhost
   roles:
     - base
 

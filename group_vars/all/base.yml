@@ -1,185 +1,82 @@
 ---
 
 base_archiving_tools:
-  - arj
-  - cabextract
-  - file-roller
-  - mpack
-  - p7zip-full
-  - sharutils
-  - unace
-  - unzip
-  - uudeview
-  - zip
+  - arj            # ARJ archiver
+  - cabextract     # Extracts Microsoft cabinet files
+  - file-roller    # GNOME archive manager
+  - mpack          # MIME mail packer/unpacker
+  - p7zip-full     # 7z archive support
+  - sharutils      # Shell archiving utilities
+  - unace          # Extracts ACE archives
+  - unzip          # Extracts ZIP archives
+  - uudeview       # UUencoded file decoder
+  - zip            # ZIP archive tool
 
 base_productivity_tools:
-  - libreoffice
-  - foliate
-  - qalc
+  - libreoffice    # Office suite
 
 base_system_tools:
-  - bind9-dnsutils
-  - fatrace
-  - fdupes
-  - gnome-calculator
-  - gnome-shell-extension-bluetooth-quick-connect
-  - gufw
-  - nala    # alternative package management tool to apt/apt-get
-  - network-manager-openvpn-gnome
-  - openvpn
-  - progress
-  - pwgen
-#  - syncthing
-  - qemu-utils
-  - rsync
-  - trash-cli  # command line tools to interact with files/directories in rubbish bin
-
-base_system_tools_laptop:
-#  - cpufrequtils
-#  - powertop
-  - tlp
-  - tlp-rdw
-  - acpi-call-dkms  # for newer ThinkPads (X220/T420 and later)
-#  - tp-smapi-dkms  # for older ThinkPads
+  - bind9-dnsutils  # DNS utilities
+  - gnome-calculator  # Calculator application for GNOME
+  - lsd  # the next gen `ls` command
+  - network-manager-openvpn-gnome  # Network Manager VPN plugin for OpenVPN
+  - openvpn  # VPN client
+  - qemu-guest-agent  # Guest agent for QEMU/KVM
+  - spice-vdagent  # Guest agent for SPICE
+  - strace  # System call tracer
+  - rsync  # Fast, versatile, remote (and local) file-copying tool
 
 base_download_tools:
-  - aria2
-  - axel
-  - transmission
-  - speedtest-cli
-  - wget
-  - yt-dlp
+  - aria2  # Lightweight multi-protocol & multi-source command-line download utility
+  - wget  # Network downloader
 
 base_developer_tools:
-  - 2to3
-  - android-sdk-platform-tools-common
-  - android-tools-adb
-  - android-tools-fastboot
-  - ansible
-  - ansible-lint
-  - apostrophe
-  - awscli
+  - alacritty  # OpenGL terminal emulator
   - bat  # A cat(1) clone with wings
-  - bats  # Bash Automated Testing System
-  - bats-assert
-  - bats-file
-  - bats-support
-  - bpython
-  - black
   - btop  # Modern and colorful command line resource monitor that shows usage and stats
-  - cargo
-  - cloc
-  - clusterssh
-  - csvkit
-  - curl
-  - default-jre-headless
-  - dos2unix
-  - duf  # Disk Usage/Free Utility
-  - entr
-  - expect
-  - filezilla
-  - fonts-powerline
-  - fzf
-  - g++
-  - gawk
-  - geoip-bin
-  - git
-  - git-extras
-  - gitg
-  - golang-go
-  - htop
-  - httpie
-  - inotify-tools
-  - ipython3
-  - jq
-  - kwalify
-  - makeself
-  - meld
-  - miller
-  - moreutils
-  - most
-  - mssh
-  - mtr-tiny
-  - ncat
-  - nmap
-  - nmon
-  - nodejs
-  - pandoc
-  - parallel
-  - pcre2-utils  # provides pcre2grep and pcre2test (perl-compatible regex)
-  - pipx
-  - pry
-  - pssh
-  - ptpython
-  #- puppet
-  #- puppet-lint
-  - pv
-  - pylint
-  - python3-cachecontrol
-  - python3-demjson  # provides jsonlint-py3 for json lint
-  - python3-jmespath
-  - python3-pep8
-  - python3-pip
-  - python3-poetry
-  - ranger
-  - rclone
-  - recode
-  - remmina
-  - rename
-  - ripgrep  # launch using rg from the cli
-  - ruby
-  - ruby-dev
-  - shellcheck
-  - siege
-  - socat
-  - sshfs
-  - sshpass
-  - sshuttle
-  - stow  # symlink manager
+  - cargo  # Rust package manager
+  - curl  # Command line tool for transferring data with URL syntax
+  - dos2unix  # Convert text files with DOS or Mac line endings to Unix line endings
+  - entr  # Run arbitrary commands when files change
+  - expect  # Automate interactive applications
+  - fzf  # A command-line fuzzy finder
+  - glow  # Redder Markdown on the command-line
+  - g++  # GNU C++ compiler
+  - gawk  # GNU version of AWK programming language
+  - git  # Distributed version control system
+  - git-extras  # GIT utilities -- provides git summary, git changelog, git effort, etc.
+  - golang-go  # Go programming language compiler and tools
+  - htop  # Interactive process viewer
+  - httpie  # User-friendly command-line HTTP client
+  - jq  # Command-line JSON processor
+  - meld  # Visual diff and merge tool
+  - moreutils  # Collection of useful UNIX utilities
+  - mtr-tiny  # Network diagnostic tool
+  - nmap  # Network exploration tool and security/port scanner
+  - pandoc  # universal document converter
+  - parallel  # Shell tool for executing jobs in parallel
+  - pipx  # Install and run Python applications in isolated environments
+  - pv  # Pipe viewer - monitor the progress of data through a pipeline
+  - pylint  # Python code static checker
+  - python3-pep8  # Python style guide checker
+  - python3-pip  # Python package installer
+  - python3-poetry  # Python dependency management and packaging made easy
   - tcptraceroute  # traceroute implementation using TCP packets
-  - tig
-  - tilix  # A tiling terminal emulator for Linux using GTK+ 3
-  - tmux
-  - tmuxp
-  - tree
-  - uget
-  - xsel
-  - yamllint
-  - zeal
+  - tmux  # terminal multiplexer
+  - tree  # display directories as trees (with optional color/HTML output)
+  - xh  # A friendly and fast curl alternative
+  - xsel  # Command-line program for getting and setting the contents of the X selection
 
 # uses pipx to install python pip packages in a virtualized environment
 base_developer_tools_pipx:
-  - tldr
-  - ruff
-  - mitmproxy
-
-base_virtualization_tools:
-  - virtualbox
-  - virtualbox-ext-pack
-  - docker.io
-  - docker-compose
+  - tldr  # Simplified and community-driven man pages
+  - ruff  # Extremely fast Python linter, written in Rust
+  - mitmproxy  # An interactive, SSL-capable intercepting proxy for HTTP with a console interface
 
 base_media_tools:
-  - ffmpeg
-  - gimp
-  - imagemagick
-  - libimage-exiftool-perl
-  - mediainfo
-  - soundconverter
-  - totem
-  - vlc
-
-golang_tools:
-  - github.com/charmbracelet/glow@latest  # Render markdown on the CLI
-  - oss.terrastruct.com/d2@latest  # d2 diagram as code tool
-
-base_permanent_night_light:
-  night_light_enabled: false              # set this to true for permanently turning on night light
-  night_light_schedule_automatic: false
-  night_light_schedule_from: 0
-  night_light_schedule_to: 24
-  night_light_temperature: 4200
-
-base_obsidian_download_base_url: "https://api.github.com/repos/obsidianmd/obsidian-releases/releases/latest"
+  - ffmpeg  # Multimedia framework for handling audio, video, and other multimedia files and streams
+  - imagemagick  # Software suite to create, edit, compose, or convert bitmap images
+  - libimage-exiftool-perl  # Read, write and edit meta information in image, audio and video files
+  - vlc  # Multi-platform multimedia player and streamer
 
 ...

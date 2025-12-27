@@ -34,8 +34,9 @@
         src: "{{ item }}"
         dest: "~{{ local_username }}/{{ item }}"
       with_items:
-        - .shell_aliases
-        - .shell_functions
+        - .shell_aliases.sh
+        - .shell_functions.sh
+        - .shell_variables.sh
   become: true
   become_user: "{{ local_username }}"
 
