@@ -58,7 +58,6 @@ base_developer_tools:
   - pipx  # Install and run Python applications in isolated environments
   - pv  # Pipe viewer - monitor the progress of data through a pipeline
   - pylint  # Python code static checker
-  - python3-pep8  # Python style guide checker
   - python3-pip  # Python package installer
   - python3-poetry  # Python dependency management and packaging made easy
   - tcptraceroute  # traceroute implementation using TCP packets
