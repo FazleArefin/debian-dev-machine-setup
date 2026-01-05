@@ -128,6 +128,5 @@ export PIPENV_VENV_IN_PROJECT=1
 [[ -f ~/.shell_functions.sh ]] && source ~/.shell_functions.sh
 [[ -f ~/.shell_variables.sh ]] && source ~/.shell_variables.sh
 
-# enable fzf fuzzy finder completions in the terminal
-[[ -f /usr/share/doc/fzf/examples/key-bindings.zsh ]] && source /usr/share/doc/fzf/examples/key-bindings.zsh    #fzf
-[[ -f /usr/share/doc/fzf/examples/completion.zsh ]] && source /usr/share/doc/fzf/examples/completion.zsh        #fzf
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
