@@ -2,6 +2,9 @@
 
 zsh_packages:
   - zsh          # Z shell, a powerful interactive shell and scripting language
-  - zsh-antigen  # A plugin manager for zsh
+  - fzf
+
+zsh_zinit_git_repo: "https://github.com/zdharma-continuum/zinit.git"
+zsh_zinit_install_path: "~/.local/share/zinit/zinit.git"
 
 ...

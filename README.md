@@ -36,7 +36,7 @@ Below is a summary of the packages installed and configured, organized by roles:
     - Additional Vim settings are enabled in `~/.vim_runtime/my_configs.vim`, which are not part of the Vim distribution. Edit this file as needed.
 - **role: zsh**
   - Installs the Zsh package and sets it as the user’s default shell.
-  - Installs the Antigen Zsh plugin manager.
+  - Installs the zinit Zsh plugin manager.
   - Copies and enables a sample `~/.zshrc` file if one does not exist, including:
     - A function to prevent `ssh-agent` from repeatedly prompting for encrypted SSH key passwords when opening new terminals.
     - Additional shell aliases, functions, and variables in `~/.shell_aliases.sh`, `~/.shell_functions.sh`, and `~/.shell_variables.sh`.
