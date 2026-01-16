@@ -51,13 +51,13 @@
   become: true
   become_user: "{{ local_username }}"
 
-# Fix for bat syntax highlighting tool; Ubuntu packages it as batcat instead of just bat
+# Fix for bat syntax highlighting tool; Debian packages it as batcat instead of just bat
 - name: Create symlink for bat
   ansible.builtin.file:
     src: /usr/bin/batcat
-    dest: /usr/bin/bat
+    dest: /usr/local/bin/bat
     state: link
-    force: false
+    force: yes
 
 - name: Create .ssh dir
   ansible.builtin.file:
