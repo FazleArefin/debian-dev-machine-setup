@@ -7,6 +7,9 @@
     name: vm.swappiness
     value: '0'
     state: present
+    sysctl_file: /etc/sysctl.d/99-swappiness.conf
+    sysctl_set: true
+    reload: true
 
 - name: Reduce space used by journald
   ansible.builtin.lineinfile:
