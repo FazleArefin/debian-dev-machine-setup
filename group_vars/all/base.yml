@@ -15,8 +15,8 @@ base_productivity_tools:
 
 base_system_tools:
   - bind9-dnsutils  # DNS utilities
+  - eza  # Modern replacement for ls
   - gnome-calculator  # Calculator application for GNOME
-  - lsd  # the next gen `ls` command
   - network-manager-openvpn-gnome  # Network Manager VPN plugin for OpenVPN
   - openvpn  # VPN client
   - qemu-guest-agent  # Guest agent for QEMU/KVM
